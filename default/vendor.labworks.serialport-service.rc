@@ -1,0 +1,5 @@
+service vendor.labworks.serialport-service /vendor/bin/hw/vendor.labworks.serialport-service
+    seclabel u:r:su:s0
+    class hal
+    user root
+    group root

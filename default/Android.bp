@@ -1,0 +1,16 @@
+cc_binary {
+    name: "vendor.labworks.serialport-service",
+    srcs: [
+        "SerialPort.cpp",
+        "main.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "vendor.labworks.serialport-ndk",
+    ],
+    init_rc: ["vendor.labworks.serialport-service.rc"],
+    vintf_fragments: ["serialport-default.xml"],
+    vendor: true,
+    relative_install_path: "hw",
+}

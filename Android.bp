@@ -1,0 +1,12 @@
+aidl_interface {
+    name: "vendor.labworks.serialport",
+    srcs: ["vendor/labworks/serialport/*.aidl"],
+    owner: "Embedded Labworks",
+    vendor: true,
+    unstable: true,
+    backend: {
+        ndk: {
+            enabled: true,
+        },
+    },
+}

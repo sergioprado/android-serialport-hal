@@ -10,7 +10,6 @@ cc_binary {
         "vendor.labworks.serialport-ndk",
     ],
     init_rc: ["vendor.labworks.serialport-service.rc"],
-    vintf_fragments: ["serialport-default.xml"],
-    vendor: true,
+    system_ext_specific: true,
     relative_install_path: "hw",
 }

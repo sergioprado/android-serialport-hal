@@ -8,5 +8,5 @@ cc_binary {
         "libbinder_ndk",
         "vendor.labworks.serialport-ndk",
     ],
-    vendor: true,
+    system_ext_specific: true,
 }

@@ -18,4 +18,4 @@ ndk::ScopedAStatus SerialPort::rx(int8_t* data) {
 } // namespace serialport
 } // namespace labworks
 } // namespace vendor
-} // name space aidl
+} // namespace aidl

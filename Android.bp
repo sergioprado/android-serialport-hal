@@ -3,10 +3,17 @@ aidl_interface {
     srcs: ["vendor/labworks/serialport/*.aidl"],
     owner: "Embedded Labworks",
     system_ext_specific: true,
-    unstable: true,
+    vendor_available: true,
+    stability: "vintf",
     backend: {
         ndk: {
             enabled: true,
         },
     },
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
 }
